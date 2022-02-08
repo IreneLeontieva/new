@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
-public class TestBox {
+public class AutomationPracticeForm {
 
     @BeforeAll
     static void beforeAll() {
@@ -20,7 +20,7 @@ public class TestBox {
     }
 
     @Test
-    void successFillTest() {
+    void successFillForm() {
         open("/automation-practice-form");
         $(".main-header").shouldHave(text("Practice Form"));
 
